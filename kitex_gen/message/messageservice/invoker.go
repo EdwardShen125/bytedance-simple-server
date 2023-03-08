@@ -3,8 +3,8 @@
 package messageservice
 
 import (
-	server "github.com/cloudwego/kitex/server"
 	message "github.com/EdwardShen125/bytedance-simple-server/kitex_gen/message"
+	server "github.com/cloudwego/kitex/server"
 )
 
 // NewInvoker creates a server.Invoker with the given handler and options.
