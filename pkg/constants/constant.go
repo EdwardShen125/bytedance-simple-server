@@ -19,11 +19,12 @@ const (
 	OssBucket          = "dynn"
 
 	//数据库表名
-	VideoTableName    = "video"
-	UserTableName     = "user"
-	FavoriteTableName = "favorite"
-	CommentTableName  = "comment"
-	RelationTableName = "relation"
+	VideoTableName     = "video"
+	UserTableName      = "user"
+	FavoriteTableName  = "favorite"
+	CommentTableName   = "comment"
+	RelationTableName  = "relation"
+	MessageServiceName = "message"
 
 	//jwt
 	SecretKey           = "secret key"
