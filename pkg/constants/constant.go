@@ -13,18 +13,19 @@ const (
 	FavoriteAddress    = "127.0.0.1:8084"                                                                        //Favorite服务地址
 	CommentAddress     = "127.0.0.1:8085"                                                                        //Comment服务地址
 	RelationAddress    = "127.0.0.1:8086"                                                                        //Relation服务地址
+	MessageAddress     = "127.0.0.1:8087"                                                                        //Message服务地址
 	OssEndPoint        = "oss-cn-hangzhou.aliyuncs.com"                                                          //Oss
 	OssAccessKeyId     = "LTAI5t8HQjxzMFRRAoZk3kBW"
 	OssAccessKeySecret = "d4IF8KFlPJipNHydPoEnqiwf5xJ7t1"
 	OssBucket          = "dynn"
 
 	//数据库表名
-	VideoTableName     = "video"
-	UserTableName      = "user"
-	FavoriteTableName  = "favorite"
-	CommentTableName   = "comment"
-	RelationTableName  = "relation"
-	MessageServiceName = "message"
+	VideoTableName    = "video"
+	UserTableName     = "user"
+	FavoriteTableName = "favorite"
+	CommentTableName  = "comment"
+	RelationTableName = "relation"
+	MessageTableName  = "message"
 
 	//jwt
 	SecretKey           = "secret key"
@@ -52,6 +53,7 @@ const (
 	FavoriteServiceName = "favorite"
 	CommentServiceName  = "comment"
 	RelationServiceName = "relation"
+	MessageServiceName  = "message"
 
 	//Limit
 	NeedCPURateLimit = false
