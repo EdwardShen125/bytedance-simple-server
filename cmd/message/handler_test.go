@@ -4,6 +4,8 @@ import (
 	"context"
 	"reflect"
 	"testing"
+
+	"github.com/EdwardShen125/bytedance-simple-server/kitex_gen/message"
 )
 
 func TestMessageServiceImpl_MessageAction(t *testing.T) {
