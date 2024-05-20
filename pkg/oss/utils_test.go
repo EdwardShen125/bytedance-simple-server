@@ -22,3 +22,24 @@ func TestPublishVideoToPublic(t *testing.T) {
 		})
 	}
 }
+
+func TestPublishVideoToOss(t *testing.T) {
+	type args struct {
+		objectKey string
+		filePath  string
+	}
+	tests := []struct {
+		name    string
+		args    args
+		wantErr bool
+	}{
+		// TODO: Add test cases.
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if err := PublishVideoToOss(tt.args.objectKey, tt.args.filePath); (err != nil) != tt.wantErr {
+				t.Errorf("PublishVideoToOss() error = %v, wantErr %v", err, tt.wantErr)
+			}
+		})
+	}
+}
