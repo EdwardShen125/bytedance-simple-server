@@ -2,6 +2,7 @@ package rpc
 
 import (
 	"context"
+	"github.com/EdwardShen125/bytedance-simple-server/kitex_gen/comment"
 	"reflect"
 	"testing"
 )
