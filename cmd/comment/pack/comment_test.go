@@ -29,3 +29,24 @@ func TestCommentList(t *testing.T) {
 		})
 	}
 }
+
+func TestCommentInfo(t *testing.T) {
+	type args struct {
+		commentRaw *db.CommentRaw
+		user       *db.UserRaw
+	}
+	tests := []struct {
+		name string
+		args args
+		want *comment.Comment
+	}{
+		// TODO: Add test cases.
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := CommentInfo(tt.args.commentRaw, tt.args.user); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("CommentInfo() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
